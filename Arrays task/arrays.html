@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array methods</title>
+</head>
+<body>
+  <h1>ARRAY METHOD()</h1>
+  <script type="text/javascript">
+    let arr=[4,64,144,16]
+    document.write("map() method: "+arr.map(Math.sqrt)+"<br>")
+    let arr1=[2,1,3]
+    document.write("sort() method: "+arr1.sort()+"<br>")
+    const array1 = ['a', 'b', 'c'];
+        array1.forEach((element) => document.write("forEach() method: "+element+"<br>"));
+        document.write("concat() method: "+arr.concat(arr1)+"<br>")
+        const isBelowThreshold = (currentValue) => currentValue < 40;
+
+        const array2 = [1, 30, 39, 29, 10, 13];
+
+        document.write("every() method: "+array2.every(isBelowThreshold)+"<br>");
+        const array3 = [1, 2, 3, 4, 5];
+       const even = (element) => element % 2 === 0;
+       document.write("some() method: "+array3.some(even)+"<br>");
+       document.write("includes() method: "+array2.includes(39)+"<br>")
+       document.write(array3.join('-')+"<br>")
+       const array4 = [1, 2, 3, 4];
+       const initialValue = 0;
+       const sumWithInitial = array4.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+       document.write("reduce() method: "+sumWithInitial+"<br>");
+       const array5 = [5, 12, 8, 130, 44];
+       const found = array5.find((element) => element > 10);
+       document.write("find() method: "+found+"<br>");
+       const array6 = [5, 12, 8, 130, 44];
+      const isLargeNumber = (element) => element > 13;
+      document.write("findIndex() method: "+array6.findIndex(isLargeNumber)+"<br>");
+       document.write("indexOf() method: "+array6.indexOf(12)+"<br>")
+       document.write("fill() method: "+array6.fill(20)+"<br>")
+       document.write("slice() method: "+array5.slice(1,3)+"<br>");
+       document.write("reverse() method: "+array1.reverse()+"<br>")
+       document.write("push() method: "+array4.push("1")+"<br>")
+       document.write(array4+"<br>")
+       document.write("pop() method: "+arr.pop()+"<br>")
+       document.write(arr+"<br>")
+       document.write("shift() method: "+array5.shift()+"<br>")
+       document.write(array5+"<br>")
+       document.write("unshift() method: "+array3.unshift()+"<br>")
+       document.write(array3+"<br>")
+       const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+       const res = words.filter((word) => word.length > 6);
+      document.write("filter() method: "+res);
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task2</title>
+</head>
+<body>
+	<button onclick="incrbyone()">incr by 1</button>
+	<button onclick="decrbyone()">decr by 1</button>
+	<p id="output"></p>
+	<script type="text/javascript">
+		var i=0;
+		function incrbyone()
+		{if(i<8)
+		{
+			document.getElementById("output").innerText=++i;
+		}
+	}
+		function decrbyone()
+		{if(i>0)
+		{
+			document.getElementById("output").innerText=--i;
+		}
+	}
+	</script>
+
+</body>
+</html>

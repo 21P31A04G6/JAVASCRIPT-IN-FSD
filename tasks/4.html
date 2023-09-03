@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task 4</title>
+</head>
+<body>
+	<script>
+		function calculateEvenOddSum(numbers) {
+  let evenSum = 0;
+  let oddSum = 0;
+
+  for (let number of numbers) {
+    if (number % 2 === 0) {
+      evenSum += number;
+    } else {
+      oddSum += number;
+    }
+  }
+
+  return { evenSum, oddSum };
+}
+
+const inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11];
+const { evenSum, oddSum } = calculateEvenOddSum(inputArray);
+
+document.write(`Sum of even numbers: ${evenSum}`,"<br>");
+document.write(`Sum of odd numbers: ${oddSum}`,"<br>");
+</script>
+
+
+
+</body>
+</html>

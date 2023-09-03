@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+	<title>type</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*var k="swathi";
+		var a=10;
+		var b=30;
+		alert(k);
+		document.write(a);
+		console.log(b);*/
+
+		/*var s=10;
+		document.write(typeof(s)+"<br>");
+		var name="swathi"
+		document.write(typeof(name)+"<br>");
+		var gender=true;
+		document.write(typeof(gender)+"<br>");*/
+
+		/*var arr=[10,"swathi",30];
+		document.write(arr);*/
+
+		/*var arr=[10,"swathi",30];
+		console.log(arr);
+		document.write(arr[1]);*/
+
+		/*var trainees=[{
+			'name':'swathi',
+			'roll_no':'21p31a04g6',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'charlie',
+			'roll_no':'21p31a04g5',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'charlie',
+			'roll_no':'21p31a04g5',
+			'college':'ACET',
+			'branch':'ECE',
+		}]
+		console.log(trainees[0].name);
+		console.log(trainees[0].roll_no);
+		console.log(trainees[0].college);
+		console.log(trainees[0].branch);
+		console.log(trainees[1].name);
+		console.log(trainees[1].roll_no);
+		console.log(trainees[1].college);
+		console.log(trainees[1].branch);*/
+
+		/*var trainees=[{
+			'name':'swathi',
+			'roll_no':'21p31a04g6',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'charlie',
+			'roll_no':'21p31a04g5',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'kushi',
+			'roll_no':'21p31a04h2',
+			'college':'ACET',
+			'branch':'ECE',
+		}]
+		for (i=0; i<trainees.length; i++){
+			console.log(trainees[i].name+ trainees[i].roll_no);
+		}*/
+
+		/*var trainees=[{
+			'name':'swathi',
+			'roll_no':'21p31a04g6',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'charlie',
+			'roll_no':'21p31a04g5',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'kushi',
+			'roll_no':'21p31a04h2',
+			'college':'ACET',
+			'branch':'ECE',
+		}]
+		for(i=0; i<trainees.length; i++){
+			document.write((i+1)+"."+trainees[i].name+ " " +trainees[i].roll_no+ " " +trainees[i].college+ " " +trainees[i].branch +"<br>");
+		}*/
+
+		var trainees=[{
+			'name':'swathi',
+			'roll_no':'21p31a04g6',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'charlie',
+			'roll_no':'21p31a04g5',
+			'college':'ACET',
+			'branch':'ECE',
+		},
+		{
+			'name':'kushi',
+			'roll_no':'21p31a04h2',
+			'college':'ACET',
+			'branch':'ECE',
+		}]
+		for(var i=0;i<trainees.length;i++){
+			for(key in trainees[i]){
+				document.write(trainees[i][key]+ " ");
+			}
+			document.write("<br>");
+		}
+		
+	</script>
+
+</body>
+</html>	

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image</title>
+</head>
+<body>
+	<center>
+		<button onclick="prevslide()">previous</button> 
+		<button onclick="nextslide()">Next</button> 
+		<p id="out"></p>
+		<img src="1.jpg" style="width: 200px;height: 200px;">   
+	</center>
+	<script type="text/javascript">
+		var i = 1;
+		function nextslide(){
+			if(i<5){
+				var res = ++i
+				document.getElementById('out').innerHTML = "<img src='"+res+".jpg' style='width:200px;height:200px;' />";
+			}			
+		}
+		function prevslide(){
+			if(i>1){
+				var res = --i
+				document.getElementById('out').innerHTML = "<img src='"+res+".jpg' style='width:200px;height:200px;' />";
+			}			
+		}
+	</script>
+
+</body>
+</html>

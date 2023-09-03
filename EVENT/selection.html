@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>selection</title>
+</head>
+<body>
+	<center>
+		<select style="height: 20px; width: 50px;" onchange="selection(this.value)">
+			<option>select college</option>
+			<option value="AEC">AEC</option>
+			<option value="ACET">ACET</option>
+			<option value="ACOE">ACOE</option>
+		</select>
+		<p id="op_id"></p>
+	</center>
+	<script type="text/javascript">
+		function selection(clg_name){
+			document.getElementById('op_id').innerText=clg_name
+		}
+	</script>
+
+</body>
+</html>

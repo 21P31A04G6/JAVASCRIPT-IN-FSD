@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task 7</title>
+</head>
+<body>
+  <script>
+    function isPalindrome(number) {
+    const numStr = number.toString();
+    const reversedStr = numStr.split('').reverse().join('');
+    
+    return numStr === reversedStr;
+}
+
+const inputNumber = parseInt(prompt("Enter a number:"));
+
+if (isNaN(inputNumber)) {
+    document.write("Invalid input. Please enter a valid number.");
+} else {
+    if (isPalindrome(inputNumber)) {
+        document.write(`${inputNumber} is a palindrome.`);
+    } else {
+        document.write(`${inputNumber} is not a palindrome.`);
+    }
+}
+</script>
+
+
+</body>
+</html>
+

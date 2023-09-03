@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>regular expressions</title>
+</head>
+<body>
+	<h2>Regular Expressions</h2>
+	<script type="text/javascript">
+		/*let re=/batch/
+		let output=re.test('fullstack batch');
+		//console.log(output)
+		if(output==true){
+			console.log("valid")
+		}else{
+			console.log('Not valid')
+		}*/
+
+		/*let re=/kurakulaa/
+		let output=re.test('swathi kurakula');
+		//console.log(output)
+		if(output==true){
+			console.log("valid")
+		}else{
+			console.log('Not valid')
+		}*/
+
+		/*let re=/kurakula/i;
+		let output=re.test('swathi KURAKULA');
+		//console.log(output)
+		if(output==true){
+			console.log("valid")
+		}else{
+			console.log('Not valid')
+		}*/
+
+		/*let re=/^s/;
+		let output=re.test('swathi KURAKULA');
+		//console.log(output)
+		if(output==true){
+			console.log("valid")
+		}else{
+			console.log('Not valid')
+		}*/
+
+		/*let re=/^w/;
+		let output=re.test('swathi KURAKULA');
+		//console.log(output)
+		if(output==true){
+			console.log("valid")
+		}else{
+			console.log('Not valid')
+		}*/
+
+		/* re=/kurakula/g;
+		 output=re.exec('kurakula swathi kurakula');
+		//console.log(output)
+		//console.log(output);
+		console.log(output.index)
+	    output=re.exec('kurakula swathi kurakula');
+		console.log(output.index)*/
+
+		//numbers//
+		re=/^[0-9]{10}///valid upto numbers but exceeded the range//
+		re=/^[0-9]{10}$/ //valid upto 10 numbers not exceeded range by $//
+		re=/^[9][0-9]{9}$/ //starting with number 9//
+		output=re.test("9876543210");
+		console.log(output)
+		
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrey methods| map()</title>
+</head>
+<body>
+	<h2>ARREY METHODS | map()</h2>
+	<script type="text/javascript">
+		let trainees=['swathi','seleena','santhi'];
+		/*for (var i=0;i<trainees.length;i++){
+			console.log(trainees[i])
+		}*/
+
+		/*trainees.map(function(trainees_name,i,arr){
+			console.log(trainees_name)
+		})*/
+
+		/*let arr1=trainees.map(function(ele,index,old_arr){
+			return "Dear"+ele
+		})
+		console.log(arr1)*/
+
+		let trainees1=[{
+			'name':'swathi',
+			'rollno':'21'
+		},
+		{'name':'santhi',
+			'rollno':'I9'},
+			{
+				'name':'sneha',
+			'rollno':'J0'
+			}
+		]
+		trainees1.map(function(each_trainee,i,arr){
+			console.log((i+1)+" "+each_trainee.name+" "+each_trainee.rollno)
+		})
+	</script>
+
+
+</body>
+</html>

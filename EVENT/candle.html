@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>candel</title>
+</head>
+<body>
+<center>
+
+<img id="myImage" onclick="changeImage()" src="p1.jfif" width="1500" height="700">
+</center>
+
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("p2")) {
+    image.src = "p1.jfif";
+  } else {
+    image.src = "p2.jfif";
+  }
+}
+</script>
+
+</body>
+</html>

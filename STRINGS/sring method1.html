@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string method</title>
+</head>
+<body>
+	<table border="">
+		<tr>
+		<td>a</td>
+		<td>b</td>
+		<td>c</td>
+		<td>d</td>
+		<td>e</td>
+		<td>f</td>
+		<td>g</td>
+		</tr>
+		<tr>
+			<td>0</td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let str='SWATHI';
+		function swathi(str_name){
+			document.write('<b>'+str_name+'<br>');
+
+		}
+		swathi("original string: "+str)
+		swathi("string length: "+str.length)
+		swathi("string index: "+str[4])
+		//character at hte position//
+		swathi("char at method: "+str.charAt(3))
+		//index of method//
+		swathi("index of: "+str.indexOf('A'))
+		//last value//
+		swathi("Last index of: "+str.lastIndexOf('I'));
+		let str1='  hello';
+		//remove the spaces//
+		swathi("trim method="+str1.trim())
+		let str2='WELCOME';
+		swathi('small letters='+str2.toLowerCase())
+		swathi("upper letters"+str2.toUpperCase())
+		let str3='swathi'
+		let str4='kurakula'
+		swathi("concantation="+str3.concat(str3,str4))
+		let str5='in not ok';
+		//the given string is there are not//
+		swathi("includes="+str5.includes('in'))//true
+		swathi("includes="+str5.includes('is'))//false
+		//converting a string into the array//
+		let str6='sandy';
+		document.write(str6.split(""));
+		document.write("<br>")
+		//string divides by based on deliminater//
+		let str7='sreesty&jessy,sandy';
+		document.write(str7.split("&"))
+		document.write("<br>")
+		document.write(str7.split(","))
+		//start with=>returns the boolean value//
+		let str8='cherry';
+		swathi("starts with="+str8.startsWith('y'))
+		swathi("starts with="+str8.startsWith('c'))
+		swathi("ends with="+str8.endsWith('c'))
+		swathi("ends with="+str8.endsWith('y'))
+		//slice methods//
+		//string name.slice('start position and end position')
+		swathi("slice method="+str.slice(1,4))
+		swathi("slice method="+str.slice(-2))
+		swathi("slice method="+str.slice(2))
+		swathi("slice method="+str.slice(-1,-4))
+		//sub strings//
+		//it allows only positive index//
+		swathi("slice method="+str.substring(1,4))
+		swathi("slice method="+str.substring(-2))
+		//substr method//
+		swathi("substr method="+str.substr(1,4))
+
+
+
+
+	</script>
+
+</body>
+</html>

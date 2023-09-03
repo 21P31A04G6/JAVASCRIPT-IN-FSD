@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reg</title>
+</head>
+<body>
+	<h2>Regular expression</h2>
+	<input type="text" name="" id="in_id">
+	<button onclick="check_numornot()">check validity</button><br><br>
+	<input type="text" name="" id="url_id">
+	<button onclick="check_urlornot()">url validity</button>
+	<br>
+	<span id="msg_id"></span>
+	<script type="text/javascript">
+		function check_numornot(){
+			//re=/^[0-9]{10}$/ //numbers only upto 10 range
+			//reg=/^[8][0-9]{9}$/ //starting number is 8 only//
+			//reg=/^[A-Z]+$/ //only capitals
+			//reg=/^[a-z]+$/ //only smalls
+			//reg=/^[a-zA-z]+$/  //both
+			//reg=/^[a-zA-z0-9]+$/ //both letters and numbers//
+			reg=/^\w+@[a-zA-z_]+?\.[a-zA-Z]{2,3}$/;
+			let res=document.getElementById('in_id').value;
+			output=reg.test(res);
+			if(output==true){
+				document.getElementById('msg_id').innerText="correct"
+				document.getElementById('msg_id').style.color="blue"
+			}else{
+			document.getElementById('msg_id').innerText="Please enter valid number"
+			document.getElementById('msg_id').style.color="red"
+	        } 
+		}
+		function check_urlornot(){
+			reg2= /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
+			res2=document.getElementById('url_id').value;
+			output2=reg2.test(res2);
+			if(output2==true){
+				document.getElementById('msg_id').innerText='correct'
+				document.getElementById('msg_id').style.color='green'
+			}else{
+				document.getElementById('msg_id').innerText='Please enter valid url'
+				document.getElementById('msg_id').style.color='red'
+			}
+		}
+
+	</script>
+
+</body>
+</html>

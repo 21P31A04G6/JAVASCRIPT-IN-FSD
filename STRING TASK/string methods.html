@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str='hello swathi'
+		function string(str_name){
+			document.write(str_name+'<br>');
+		}
+		string("name: "+str)
+		//substring//
+		string("slice method: "+str.substring(1,4))
+		//substr//
+		string("substr method: "+str.substr(1,4))
+		//replace//
+		string("replace: "+str.replace('hello','hii'))
+		//search//
+		string("search  method: "+str.search('swathi'))
+		//upper case method//
+		string("upper letters: "+str.toUpperCase())
+		//lower case method//
+		string("lower letters: "+str.toLowerCase())
+		//index method//
+		string("index of: "+str.indexOf('t'))
+		//include method//
+		string("includes: "+str.includes('hello'))
+		string("includes: "+str.includes('is'))
+		//slice method//
+		string("slice method: "+str.slice(1,4))
+		string("slice method: "+str.slice(-2))
+		//concat method//
+		let str1='SWATHI'
+		let str2='KURAKULA'
+		string("concating: "+str1.concat(str2))
+		//last index method//
+		string("last index: "+str.lastIndexOf('h'))
+		//charcodeat method//
+		string("charcodeat: "+str.charCodeAt(4))
+		//trim method//
+		string("trim: "+str.trim())
+		//charat method//
+		string("charat: "+str.charAt(2))
+		//valueof method//
+		string("valueof: "+str.valueOf())
+		//split method//
+		let str3='sreesty&jessy,sandy';
+		document.write(str3.split("&"))
+		document.write("<br>")
+		//tostring method//
+		string("tostring: "+str.toString())
+		//match method//
+		let str4="The rain in SPAIN stays mainly in the plain"
+		document.write(str4.match('ain'))
+		document.write("<br>")
+		document.write(str4.match('are'))
+	</script>
+
+</body>
+</html>

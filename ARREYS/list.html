@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>list</title>
+</head>
+<body>
+	<ol id="list_id"></ol>
+
+	<script type="text/javascript">
+		let trainees1=[{
+			'name':'swathi',
+			'rollno':21
+		},
+		{'name':'santhi',
+			'rollno':19},
+			{
+				'name':'sneha',
+			'rollno':10
+			}
+		]
+		let ol=' ';
+		trainees1.map(function(each_trainee,i,arr){
+			ol+="<ol><li>"+each_trainee.name+"</li><li>"+each_trainee.rollno+"</li></ol>"
+		})
+		document.getElementById("list_id").innerHTML=ol
+	</script>
+
+</body>
+</html>

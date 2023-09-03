@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task 4</title>
+	<style type="text/css">
+		input{
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<label>ENTER NAME</label>
+	<input type="text" onkeyup="sample(this.value)" id="keyup">
+	<br>
+	<span id="oo_id" style="color:red"></span>
+	<script type="text/javascript">
+		function sample(str){
+			if(str==""){
+				document.getElementById('keyup').style.border='1px solid red'
+				document.getElementById('oo_id').innerText='Please enter more than 3 characters'
+				document.getElementById('oo_id').style.color='red'
+			}
+			else{
+				document.getElementById('keyup').style.border='1px solid black'
+				document.getElementById('oo_id').innerText=''
+			}
+
+			/*for(i=0;i<str.length;i++){
+				if(i<3){
+					document.getElementById('keyup').style.border='1px solid red'
+				}
+				else{
+					document.getElementById('keyup').style.border='1px solid black'
+				}
+			}*/
+
+			if(str.length<3){
+				document.getElementById('keyup').style.border='1px solid red'
+				document.getElementById('oo_id').innerText='Please enter more than 3 characters'
+				document.getElementById('oo_id').style.color='red'
+			}
+		}
+	</script>
+
+</body>
+</html>

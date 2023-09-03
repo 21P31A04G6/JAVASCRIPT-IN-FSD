@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>game task</title>
+</head>
+<body>
+  
+<script type="text/javascript">
+  for (let i = 1; i <= 5; i++) {
+  const radioButton = document.createElement("input");
+  radioButton.type = "radio";
+  radioButton.name = "radioButtons";
+  radioButton.value = i;
+  radioButton.id = "radio" + i;
+  
+  const label = document.createElement("label");
+  label.textContent = i;
+  label.setAttribute("for", "radio" + i);
+  
+  document.body.appendChild(radioButton);
+  document.body.appendChild(label);
+}
+document.write("<br>")
+document.write("<br>")
+document.write("<br>")
+
+
+
+const checkButton = document.createElement("button");
+checkButton.textContent = "Check";
+checkButton.addEventListener("click", checkResult);
+document.body.appendChild(checkButton);
+
+const userInput = document.createElement("input");
+userInput.type = "number";
+userInput.placeholder = "Enter a number";
+document.body.appendChild(userInput);
+
+function checkResult() {
+  const selectedRadio = document.querySelector("input[name='radioButtons']:checked");
+  const userNumber = parseInt(userInput.value);
+  
+  if (selectedRadio && !isNaN(userNumber)) {
+    const radioValue = parseInt(selectedRadio.value);
+    
+    if (userNumber === radioValue) {
+      alert("You win!");
+    } else {
+      alert("You lose.");
+    }
+  } 
+}
+</script>
+</body>
+</html>

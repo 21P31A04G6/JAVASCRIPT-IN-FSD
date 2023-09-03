@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cake</title>
+</head>
+<body>
+	<center>
+	<img id="image" onclick="change()" src="cake.jfif" height="200px" width="300px">
+	</center>
+	<script type="text/javascript">
+		function change(){
+			var cake=document.getElementById("image");
+			if(cake.src.match("cut cake")){
+				cake.src="cake.jfif";
+			}else{
+				cake.src="cut cake.jfif";
+			}
+		}
+	</script>
+
+</body>
+</html>

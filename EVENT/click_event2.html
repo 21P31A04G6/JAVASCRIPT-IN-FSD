@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>click 2</title>
+</head>
+<body>
+	<button id="btn">click here</button>
+	<script type="text/javascript">
+		let s=document.getElementById("btn")
+		//with function name//
+		/*s.onclick=test
+		function test(){
+			alert("Hello everyone")
+		}*/
+
+//without function name//
+		s.onclick=function(){
+			alert("hii..")
+			document.body.style.background="grey"
+		}
+	</script>
+
+</body>
+</html>
